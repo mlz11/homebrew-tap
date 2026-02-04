@@ -1,8 +1,8 @@
 class ClaudeNotifier < Formula
   desc "macOS notifications with Claude icon for Claude Code hooks"
   homepage "https://github.com/mlz11/ClaudeNotifier"
-  url "https://github.com/mlz11/ClaudeNotifier/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "8aeb47b59ed6293f3796e90319f38221013f9de444b837e2b3adb9f29048ecee"
+  url "https://github.com/mlz11/ClaudeNotifier/archive/refs/tags/v1.2.0.tar.gz"
+  sha256 "2414bbec813c00517fcc0d46faad1ee9513842e2a948c72d3926cbe5f1630013"
   license "MIT"
 
   depends_on :macos
