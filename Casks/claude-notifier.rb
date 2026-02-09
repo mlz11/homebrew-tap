@@ -13,14 +13,13 @@ cask "claude-notifier" do
 
   binary "#{appdir}/ClaudeNotifier.app/Contents/MacOS/ClaudeNotifier", target: "claude-notifier"
 
+  postflight do
+    ohai "Run `claude-notifier setup` to configure Claude Code hooks"
+  end
+
   uninstall quit: "com.mlz11.ClaudeNotifier"
 
   zap trash: [
     "~/.local/bin/claude-notifier",
   ]
-
-  caveats <<~EOS
-    Run setup to configure Claude Code hooks:
-      claude-notifier setup
-  EOS
 end
