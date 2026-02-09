@@ -1,6 +1,6 @@
 cask "claude-notifier" do
-  version "1.11.0"
-  sha256 "95a41a639712510e089327790c71e2334be298e05d7f775c82918d4c634c6887"
+  version "1.11.1"
+  sha256 "8ad68627281a5636ee71ff549631654a191fe3a15902be37910b48ede6736ab0"
 
   url "https://github.com/mlz11/ClaudeNotifier/releases/download/v#{version}/ClaudeNotifier.zip"
   name "ClaudeNotifier"
