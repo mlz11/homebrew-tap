@@ -12,7 +12,7 @@ brew tap mlz11/tap
 
 macOS notifications with Claude icon for Claude Code hooks.
 
-### Cask (recommended, pre-built binary, no Xcode required)
+### Cask (recommended)
 
 ```bash
 brew install --cask mlz11/tap/claude-notifier
