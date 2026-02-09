@@ -14,7 +14,7 @@ cask "claude-notifier" do
   binary "#{appdir}/ClaudeNotifier.app/Contents/MacOS/ClaudeNotifier", target: "claude-notifier"
 
   postflight do
-    ohai "Run `claude-notifier setup` to configure Claude Code hooks"
+    puts "\n\e[1;33m  Next step: run \e[1;37mclaude-notifier setup\e[1;33m to configure Claude Code hooks\e[0m\n"
   end
 
   uninstall quit: "com.mlz11.ClaudeNotifier"
