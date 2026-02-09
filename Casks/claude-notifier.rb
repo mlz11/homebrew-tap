@@ -14,6 +14,8 @@ cask "claude-notifier" do
   binary "#{appdir}/ClaudeNotifier.app/Contents/MacOS/ClaudeNotifier", target: "claude-notifier"
 
   postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/ClaudeNotifier.app"]
     puts "\n\e[1;33m  Next step: run \e[1;37mclaude-notifier setup\e[1;33m to configure Claude Code hooks\e[0m\n"
   end
 
